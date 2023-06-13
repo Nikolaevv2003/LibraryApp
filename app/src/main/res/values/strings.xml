@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">LibraryApp</string>
+    <string name="authorization">Авторизация</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="button_login">ВОЙТИ</string>
+    <string name="welcome">Добро пожаловать!</string>
+    <string name="author">Николаев Александр РИБО-01-21</string>
+    <string name="add_book">Добавить книгу</string>
+    <string name="search">Поиск</string>
+    <string name="edit_caps">РЕДАКТИРОВАТЬ</string>
+    <string name="add_caps">ДОБАВИТЬ</string>
+    <string name="book_title">Название книги:</string>
+    <string name="title">Название</string>
+    <string name="book_author">Автор книги:</string>
+    <string name="author_hint">Автор</string>
+    <string name="rack_number">Номер стеллажа:</string>
+    <string name="rack_number_hint">Номер стеллажа</string>
+    <string name="shelf_number">Номер полки:</string>
+    <string name="shelf_number_hint">Номер полки</string>
+    <string name="book_article">Артикул книги:</string>
+    <string name="article">Артикул</string>
+    <string name="update_caps">ИЗМЕНИТЬ</string>
+</resources>

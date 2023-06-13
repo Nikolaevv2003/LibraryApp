@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CreateBookActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarCreateBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        app:titleTextColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textViewAddBookTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:text="@string/book_title" />
+
+    <EditText
+        android:id="@+id/editTextAddBookTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:layout_marginHorizontal="10dp"
+        android:paddingHorizontal="7dp"
+        android:background="@drawable/shape_edit_text"
+        android:inputType="text"
+        android:hint="@string/title" />
+
+    <TextView
+        android:id="@+id/textViewAddBookAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:text="@string/book_author" />
+
+    <EditText
+        android:id="@+id/editTextAddBookAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:layout_marginHorizontal="10dp"
+        android:paddingHorizontal="7dp"
+        android:background="@drawable/shape_edit_text"
+        android:inputType="text"
+        android:hint="@string/author_hint" />
+
+    <TextView
+        android:id="@+id/textViewAddBookRackNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:text="@string/rack_number" />
+
+    <EditText
+        android:id="@+id/editTextAddBookRackNumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:layout_marginHorizontal="10dp"
+        android:paddingHorizontal="7dp"
+        android:background="@drawable/shape_edit_text"
+        android:inputType="number"
+        android:hint="@string/rack_number_hint" />
+
+    <TextView
+        android:id="@+id/textViewAddBookShelfNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:text="@string/shelf_number" />
+
+    <EditText
+        android:id="@+id/editTextAddBookShelfNumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:layout_marginHorizontal="10dp"
+        android:paddingHorizontal="7dp"
+        android:background="@drawable/shape_edit_text"
+        android:inputType="number"
+        android:hint="@string/shelf_number_hint"/>
+
+    <TextView
+        android:id="@+id/textViewAddBookArticle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:text="@string/book_article" />
+
+    <EditText
+        android:id="@+id/editTextAddBookArticle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:layout_marginHorizontal="10dp"
+        android:paddingHorizontal="7dp"
+        android:background="@drawable/shape_edit_text"
+        android:inputType="number"
+        android:hint="@string/article"/>
+
+    <Button
+        android:id="@+id/buttonAddBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/green"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="@string/add_caps" />
+
+    <TextView
+        android:id="@+id/textViewCreateBookError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/red"
+        android:layout_marginTop="15dp" />
+</LinearLayout>

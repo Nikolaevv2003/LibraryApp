@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UpdateBookActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarUpdateBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        app:titleTextColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textViewUpdateBookTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:text="@string/book_title" />
+
+    <EditText
+        android:id="@+id/editTextUpdateBookTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:layout_marginHorizontal="10dp"
+        android:paddingHorizontal="7dp"
+        android:background="@drawable/shape_edit_text"
+        android:inputType="text"
+        android:hint="@string/title" />
+
+    <TextView
+        android:id="@+id/textViewUpdateBookAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:text="@string/book_author" />
+
+    <EditText
+        android:id="@+id/editTextUpdateBookAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:layout_marginHorizontal="10dp"
+        android:paddingHorizontal="7dp"
+        android:background="@drawable/shape_edit_text"
+        android:inputType="text"
+        android:hint="@string/author_hint" />
+
+    <TextView
+        android:id="@+id/textViewUpdateBookRackNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:text="@string/rack_number" />
+
+    <EditText
+        android:id="@+id/editTextUpdateBookRackNumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:layout_marginHorizontal="10dp"
+        android:paddingHorizontal="7dp"
+        android:background="@drawable/shape_edit_text"
+        android:inputType="number"
+        android:hint="@string/rack_number_hint" />
+
+    <TextView
+        android:id="@+id/textViewUpdateBookShelfNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:text="@string/shelf_number" />
+
+    <EditText
+        android:id="@+id/editTextUpdateBookShelfNumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:layout_marginHorizontal="10dp"
+        android:paddingHorizontal="7dp"
+        android:background="@drawable/shape_edit_text"
+        android:inputType="number"
+        android:hint="@string/shelf_number_hint"/>
+
+    <TextView
+        android:id="@+id/textViewUpdateBookArticle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:text="@string/book_article" />
+
+    <EditText
+        android:id="@+id/editTextUpdateBookArticle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:layout_marginHorizontal="10dp"
+        android:paddingHorizontal="7dp"
+        android:background="@drawable/shape_edit_text"
+        android:inputType="number"
+        android:hint="@string/article"/>
+
+    <Button
+        android:id="@+id/buttonUpdateBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/green"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="@string/update_caps" />
+
+    <TextView
+        android:id="@+id/textViewUpdateBookError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/red"
+        android:layout_marginTop="10dp" />
+</LinearLayout>
