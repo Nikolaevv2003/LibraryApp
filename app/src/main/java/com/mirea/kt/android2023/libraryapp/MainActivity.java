@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -43,8 +44,7 @@ public class MainActivity extends AppCompatActivity {
         dbManager = new DBManager();
 
         buttonLogin.setOnClickListener(x -> {
-
-            startActivity(new Intent(MainActivity.this, LibraryActivity.class));
+            Log.i("app_tag", "login button was pressed");
 
             login = editTextLogin.getText().toString();
             password = editTextPassword.getText().toString();
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
             try {
                 th.join();
             } catch (InterruptedException e) {
-                System.out.println(e.getMessage());
+                Log.e("app_tag", e.getMessage());
             } finally {
                 try {
                     JSONObject jsonObject = new JSONObject(httpRunnable.getResponseBody());
@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
                         textViewLoginInfo.setText("Неверный логин или пароль!");
                     }
                 } catch (JSONException e) {
-                    e.printStackTrace();
+                    Log.e("app_tag", e.getMessage());
                 }
             }
         });
